@@ -12,3 +12,8 @@ pool:
 steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
+- task: AzurePowerShell@5
+  inputs:
+    azureSubscription: 'MPN-12k(fb2eeccb-d5b1-4bc8-8980-795352ca8b0b)'
+    ScriptType: 'FilePath'
+    azurePowerShellVersion: 'LatestVersion'
